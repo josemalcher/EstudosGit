@@ -7,6 +7,8 @@ Meus estudos e aprendizados sobre o Git.
 [Documentação Oficial](http://git-scm.com/)
 [Vídeo aulas: RB Tech - Curso de Git](http://dev.rbtech.info/curso-controle-versao-git-aula-1)
 
+------
+
 ###Aula vídeo 1
 O que é, e para que serve?
 Sobre os estágios do Git: 
@@ -18,15 +20,16 @@ git config --global user.name "José"
 git config --global user.email "malcher@josemalcher.net"
 ```
 [Link do Vídeo 1](http://dev.rbtech.info/curso-controle-versao-git-aula-1/)
-    
+
+------    
 ###Aula vídeo 2
 Início, desenvilvimento Local.
 1. Criar um Repositório para controlar as versões. Determinar a pasta(ex.: /www/projeto1).
 2. Básico de terminal. Entrar e sair da pasta, listar pasta, limpar tela.
 3. Comando para iniciar o projeto no git:
+
 ```
     git init
-    
 ```
 4. Pasta Oculta **.git** é criada para armazenar dados do projeto pro git.
 5. Verificar o status do git, comando:
@@ -60,3 +63,27 @@ Início, desenvilvimento Local.
     git commit -a -m "Mensagem"
 ```
 [Link do Vídeo 2](http://dev.rbtech.info/curso-controle-versao-git-aula-2/)
+
+------
+
+###Aula vídeo 3
+
+Visualização detalhada das alterações, no diretorio de trabalho.
+```
+    git diff
+```
+Pra saber o que há na Stage Area, comendo:
+```
+    git diff --staged
+```
+####Histórico de todos os Commites
+```
+    git log
+    // mostra o diff, o que foi feito em cada commit(git log+ diff).
+    git log -p
+    //Exibir o ultimo commite
+    git log -p -1
+    
+    //recomendação: visualizar pelo gui
+    gitk
+```
