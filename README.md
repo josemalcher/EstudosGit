@@ -10,6 +10,10 @@ Resumo do Curso em Screencast da RB Tech
 
 [Vídeo aulas: RB Tech - Curso de Git](http://dev.rbtech.info/curso-controle-versao-git-aula-1)
 
+[Documentação para Escrita Github](https://help.github.com/categories/writing-on-github/)
+[Documentação para Escrita Github Exemplos](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
 ------
 
 ###Aula vídeo 1
