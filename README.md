@@ -1,10 +1,13 @@
-Estudos Git
+Estudos Git Básico
 ==========
 
 Meus estudos e aprendizados sobre o Git. 
 
+Resumo do Curso em Screencast da RB Tech
+
 ###Referências:
 [Documentação Oficial](http://git-scm.com/)
+
 [Vídeo aulas: RB Tech - Curso de Git](http://dev.rbtech.info/curso-controle-versao-git-aula-1)
 
 ------
@@ -171,6 +174,7 @@ Deletar o branch
 ```
 
 ------
+
 ###Aula vídeo 6
 Git e Rede Local, usar uma maquina com repositório.
 - Compartilhar uma pasta de projeto em Rede.
@@ -202,6 +206,68 @@ Git e Rede Local, usar uma maquina com repositório.
 ```
 7 - O comendo __fech__ não faz o merge automático, ele alocar em um branch
 ```
-    git fetch origin NomeDoBranch
-    //
+    git fetch origin NomeDoBranch    
 ```
+
+------
+
+###Aula vídeo 7
+Github e Git
+1 - Dar acesso ao computador local para poder interagir com o github.
+2 - gerar Par de chaves, comando:
+```
+    ssh-keygen
+    // deixar em branco - nome do arquivo
+    //deixar em branco - Gerar uma senha
+    //deixar em branco
+    //Crido na pasta /usuário/.ssh/id_rsa.pub - abrir com bloco de notas
+```
+3 - levar para o github o conteudo da chave.
+4 - SSH Keys e criar uma chave.
+
+Criar repositório no github(site)
+1 - Clonar repositório criado. Copiar o endereço SSH do repositório.
+```
+    git clone ENDEREÇO_DO_GIT NomeDaPastaLocal
+```
+2 - Adicionar os arquivos no projeto
+```
+    git status
+    git add .
+    git commit -m "mensagem"
+    
+    //mandar para repositório ONLINE
+    git push origin master
+```
+3 - atualizar os arquivos do servidor para o Local
+```
+    git pull origin master
+```
+
+------
+
+###Aula vídeo 8
+Colaborar com projeto nos gitHub
+ - Conceito de Fork = "__Clonar__" o repositório para a conta própria do Github
+ - Conceito de __Pull Requests__ = Enviar as alterações ao autor do projeto
+ 1 - Achar o projeto para colaborar
+ 2 - Clicar em Fork, repositório é copiado para a conta do github. O icone Muda!
+ 3 - O restante... clonar o projeto da propria conta.
+```
+    git clone ENDEREÇO_projeto nomeDaPasta
+    
+    git status
+    git add .
+    git commit -m "mensagem"
+    
+    //enviar para servidor remoto
+    git push origin master
+```
+4 - conclusão do trabalho, fazero Pull Request
+5 - "new pull request" -> creat pull request
+6 - preencher os campos e detalhes.
+7 - send pull request
+8 - __O dono do projeto__, de onde foi feito o fork, vai fazer as verificações.
+9 - Se estiver ok, ele fará o Merger
+
+------
